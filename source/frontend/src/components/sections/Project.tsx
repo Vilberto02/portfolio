@@ -25,10 +25,10 @@ export function ProjectSection() {
   return (
     <section
       id="project"
-      className="min-h-screen px-24 flex flex-col justify-center items-center gap-4 pt-16 pb-12"
+      className="min-h-screen px-4 sm:px-8 md:px-24 flex flex-col justify-center items-center gap-4 p-16"
     >
       <Reveal>
-        <h3 className="font-header text-6xl text-center">Proyectos</h3>
+        <h3 className="font-header text-4xl sm:text-6xl text-center">Proyectos</h3>
         <p className="text-stone-600 text-center max-w-4xl mt-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
           cupiditate soluta dolore vitae quo.
@@ -56,7 +56,7 @@ export function ProjectSection() {
         </div>
       </Reveal>
       <Reveal width="100%" delay={0.4}>
-        <div className="grid grid-cols-3 mt-8 border-l border-t border-black">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mt-8 border-l border-t border-black">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}

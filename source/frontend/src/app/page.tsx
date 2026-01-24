@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <div className="flex min-h-screen items-center justify-center">
         <Navbar></Navbar>
-        <main className="">
+        <main className="overflow-x-hidden">
           <HomeSection />
           <AboutSection />
           <SkillSection />

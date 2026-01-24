@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Menu } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export function Navbar() {
@@ -21,7 +22,7 @@ export function Navbar() {
 
   return (
     <div className={`fixed top-0 left-0 w-full z-50`}>
-      <nav className={`flex justify-between items-center px-8 md:px-24 py-4`}>
+      <nav className={`flex justify-between items-center p-4 sm:px-8 md:px-24 sm:py-4`}>
         {/* Logo Section */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -42,7 +43,7 @@ export function Navbar() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className={`flex gap-8 px-4 py-2 items-center transition-all duration-300 ${
+          className={`hidden lg:flex gap-8 px-4 py-2 items-center transition-all duration-300 ${
             isScrolled
               ? "bg-white/70 backdrop-blur-md"
               : "bg-transparent"
@@ -63,6 +64,20 @@ export function Navbar() {
             </a>
           ))}
         </motion.div>
+        
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className={` block lg:hidden p-2 cursor-pointer transition-all duration-300 ${
+            isScrolled
+              ? "bg-white/70 backdrop-blur-md"
+              : "bg-transparent"
+          }`}
+        >
+          <Menu></Menu>
+        </motion.div>
+
       </nav>
     </div>
   );

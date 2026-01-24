@@ -12,7 +12,7 @@ type ProjectCardProps = {
 export function ProjectCard({title, description, url, image, tags}:ProjectCardProps) {
   return (
     <div className="group min-h-118 flex flex-col justify-center items-center gap-8 px-7 py-9 border-b border-r border-black hover:bg-stone-50">
-      <div className="relative w-96 h-50 shadow-lg group-hover:shadow-xl">
+      <div className="relative aspect-video w-72 sm:w-96 shadow-lg group-hover:shadow-xl">
         <Image
           src={image}
           alt="Previsualización del proyecto."
@@ -24,9 +24,12 @@ export function ProjectCard({title, description, url, image, tags}:ProjectCardPr
         <p className="text-xl font-semibold">{title}</p>
         <p className="text-stone-600 text-sm">{description}</p>
         <div className="flex justify-between gap-4 items-center mt-2">
-          <div className="flex items-center gap-2 py-1">
+          <div className="hidden sm:flex items-center gap-2 py-1">
             {tags.map((item) => (
-              <div key={item} className="text-sm text-stone-600 border border-stone-600 py-2 px-2">
+              <div
+                key={item}
+                className="text-sm text-stone-600 border border-stone-600 py-2 px-2"
+              >
                 {item}
               </div>
             ))}
@@ -34,7 +37,7 @@ export function ProjectCard({title, description, url, image, tags}:ProjectCardPr
           <a
             href={url}
             target="_blank"
-            className="bg-[#087EA4] px-4 py-2 text-white hidden group-hover:flex items-center gap-2 cursor-pointer"
+            className="w-full sm:w-fit bg-[#087EA4] px-4 py-2 text-white md:hidden flex md:group-hover:flex items-center justify-center gap-2 cursor-pointer"
           >
             <p>Abrir</p>
             <ArrowUpRight width={20}></ArrowUpRight>

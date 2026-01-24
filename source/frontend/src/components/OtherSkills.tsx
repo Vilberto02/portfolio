@@ -1,15 +1,15 @@
 export function OtherSkills() {
   const skills = [
-    { name: "Git", percentage: 85 },
-    { name: "SQL", percentage: 70 },
-    { name: "Docker", percentage: 60 },
-    { name: "English", percentage: 80 },
-    { name: "Agile", percentage: 90 },
+    { name: "Git", percentage: 65 },
+    { name: "SQL", percentage: 60 },
+    { name: "Django", percentage: 50 },
+    { name: "Jest", percentage: 40 },
+    { name: "Bash", percentage: 15 },
   ];
 
   return (
     <div className="w-full max-w-sm bg-white p-6 border border-stone-200 shadow-skill h-full flex flex-col justify-center">
-      <h4 className="text-2xl font-header mb-6 text-center">
+      <h4 className="text-xl sm:text-2xl font-header mb-6 text-center">
         Otras Habilidades
       </h4>
       <div className="space-y-4">

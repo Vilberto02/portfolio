@@ -22,11 +22,11 @@ ChartJS.register(
 
 export function SkillChart() {
   const data = {
-    labels: ["React", "Figma", "Next.js", "Postman", "Tauri", "TailwindCSS"],
+    labels: ["Figma", "React", "Next.js", "Postman", "Tauri", "TailwindCSS"],
     datasets: [
       {
         label: "Nivel de Habilidad",
-        data: [90, 85, 88, 80, 75, 95], // Example values
+        data: [80, 75, 65, 50, 50, 70], // Example values
         backgroundColor: "rgba(162, 89, 255, 0.2)",
         borderColor: "rgba(162, 89, 255, 1)",
         borderWidth: 2,
@@ -71,7 +71,7 @@ export function SkillChart() {
   };
 
   return (
-    <div className="w-full h-[400px] flex justify-center items-center">
+    <div className="w-full h-100 flex justify-center items-center">
       <Radar data={data} options={options} />
     </div>
   );

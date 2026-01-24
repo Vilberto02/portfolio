@@ -39,11 +39,11 @@ const skills: { id: number; title: string }[] = [
 
 export function HomeSection() {
   return (
-    <section id="home" className="w-full flex ">
-      <div className="flex flex-col justify-center gap-8 w-1/2 mt-16 pl-44">
+    <section id="home" className="w-full flex flex-col lg:flex-row">
+      <div className="flex flex-col justify-center gap-8 w-screen mt-16 lg:w-1/2 p-8 sm:p-12 md:p-24 lg:pl-44">
         <Reveal>
           <div className="flex flex-col gap-6 pr-2">
-            <h1 className="font-header text-7xl font-bold">
+            <h1 className="font-header text-5xl sm:text-7xl font-bold">
               Hola 👋, <br />
               soy Vilberto.
             </h1>
@@ -59,7 +59,7 @@ export function HomeSection() {
           </div>
         </Reveal>
         <Reveal delay={0.4}>
-          <div className="flex gap-4 items-center mt-24">
+          <div className="flex gap-4 items-center mt-12">
             <a href="https://github.com/Vilberto02/" target="_blank">
               <Image src={Github} alt="Logo de GitHub" width={36} height={36} />
             </a>
@@ -80,10 +80,10 @@ export function HomeSection() {
           </div>
         </Reveal>
       </div>
-      <div className="bg-stone-50 h-screen w-1/2 flex justify-center items-center">
+      <div className="bg-stone-50 py-16 lg:h-screen w-screen lg:w-1/2 flex justify-center items-center">
         <Reveal delay={0.5}>
           <div className="p-6">
-            <div className="relative aspect-square w-56 lg:w-[384px] xl:w-121 bg-image-shadow overflow-hidden">
+            <div className="relative aspect-square w-60 sm:w-80 xl:w-121 bg-image-shadow overflow-hidden">
               <Image
                 src={Person}
                 fill

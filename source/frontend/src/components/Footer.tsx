@@ -4,8 +4,8 @@ import Linkdln from "@/assets/linkedin.svg";
 
 export function Footer() {
   return (
-    <footer className="flex justify-between items-center gap-8 bg-[#474747] text-white px-24 py-8">
-      <p>Copyright © 2026. Todos los derechos reservados.</p>
+    <footer className="flex justify-between items-center gap-8 bg-[#474747] text-white px-4 sm:px-8 md:px-24 py-8">
+      <p className="text-sm">Copyright © 2026. Todos los derechos reservados.</p>
       <div className="flex gap-3 items-center">
         <a href="https://github.com/Vilberto02/" target="_blank">
           <Image src={Github} alt="Logo de GitHub" width={24}></Image>
