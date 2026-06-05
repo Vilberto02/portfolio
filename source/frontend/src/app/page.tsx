@@ -5,6 +5,7 @@ import { AboutSection } from "@/components/sections/About";
 import { HomeSection } from "@/components/sections/Home";
 import { ProjectSection } from "@/components/sections/Project";
 import { SkillSection } from "@/components/sections/Skill";
+import { CTASection } from "@/components/sections/CTA";
 
 
 
@@ -19,6 +20,7 @@ export default function Home() {
           <AboutSection />
           <SkillSection />
           <ProjectSection />
+          <CTASection />
         </main>
       </div>
       <Footer></Footer>

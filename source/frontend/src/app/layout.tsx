@@ -10,11 +10,11 @@ const sofiaFont = Sofia_Sans({
 const slackeyFont = Slackey({
   variable: "--font-slackey",
   subsets: ["latin"],
-  weight: "400"
+  weight: "400",
 });
 
 export const metadata: Metadata = {
-  title: "Vilberto 💯",
+  title: "Vilberto Patricio Julca",
   description: "Portafolio web personal.",
 };
 

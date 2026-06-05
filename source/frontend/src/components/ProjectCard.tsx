@@ -7,9 +7,15 @@ type ProjectCardProps = {
   url: string;
   image: StaticImageData;
   tags: string[];
-}
+};
 
-export function ProjectCard({title, description, url, image, tags}:ProjectCardProps) {
+export function ProjectCard({
+  title,
+  description,
+  url,
+  image,
+  tags,
+}: ProjectCardProps) {
   return (
     <div className="group min-h-118 flex flex-col justify-center items-center gap-8 px-7 py-9 border-b border-r border-black hover:bg-stone-50">
       <div className="relative aspect-video w-72 sm:w-96 shadow-lg group-hover:shadow-xl">
