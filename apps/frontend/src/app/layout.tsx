@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono, Instrument_Serif, Inter } from "next/font/google";
 import { siteUrl } from "@/lib/site";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -58,6 +59,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         className={`${inter.variable} ${jetBrainsMono.variable} ${instrumentSerif.variable} min-h-full bg-surface font-primary text-ink antialiased`}
       >
         {children}
+        <Analytics></Analytics>
       </body>
     </html>
   );
